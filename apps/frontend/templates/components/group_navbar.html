@@ -1,0 +1,64 @@
+{% load static %}
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{% static 'styles/base.css' %}?{% now 'U' %}" />
+<link
+	rel="stylesheet"
+	href="{% static 'styles/group_navbar.css' %}?{% now 'U' %}"
+/>
+
+<nav>
+	<div class="container">
+		<div class="main-user">
+			<img
+				src="../../static/assets/images/{{avatar_name}}"
+				alt=""
+				class="avatar"
+			/>
+			<div class="username">
+				<p class="name">{{username}}</p>
+				<p class="bio">{{bio}}</p>
+			</div>
+			<a href="">
+				<img
+					src="../../static/assets/images/clarity_pencil-line.svg"
+					alt="Edit Icon"
+					class="edit-user"
+				/>
+			</a>
+		</div>
+		<div class="search">
+			<img
+				src="../../static/assets/images/search.svg"
+				alt="Search Icon"
+				class="search-icon"
+			/>
+			<form action="get">
+				<input
+					type="search"
+					name="search-user"
+					id="search-user"
+					placeholder="Search Here..."
+				/>
+			</form>
+		</div>
+		<hr />
+		<div class="users">
+			<div class="user">
+				<img
+					src="../../static/assets/images/avatar-1.png"
+					alt="Avatar"
+					class="avatar"
+				/>
+				<div class="username">
+					<p class="name">Qrodo</p>
+					<p class="msg">Nice One. Will Do it tomorrow</p>
+				</div>
+				<div class="info">
+					<p class="time">10:35 AM</p>
+					<div class="number-bg"><p class="number">1</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
