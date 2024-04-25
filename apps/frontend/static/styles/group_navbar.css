@@ -87,6 +87,11 @@ hr {
 .users {
 	width: 256px;
 	height: fit-content;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: flex-start;
+	row-gap: 20px;
 }
 
 .users .user {
