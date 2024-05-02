@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #chat{
+            min-width: 100px;
+            max-width: 300px;
+            background: #DCE8FF;
+            border-radius: 10px 10px 10px 0px;
+            padding: 16px;
+        }
+        .text{
+            {#text-align: right;#}
+            margin: 0;
+        }
+        .h{
+            color: #363636;
+            font-size: 10px
+        }
+        .prof{
+            border-radius: 50%;
+            width: 30px;
+        }
+        #chat2{
+            min-width: 100px;
+            max-width: 300px;
+            background: #4399FF;
+            border-radius: 10px 10px 0px 10px;
+            padding: 16px;
+        }
+        .text{
+            {#text-align: right;#}
+            margin: 0;
+        }
+        .h{
+            color: #363636;
+            font-size: 10px
+        }
+        .prof{
+            border-radius: 50%;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+<br><br>
+    {% for i in all %}
+        {% if i.pk in pk_list %}
+            {% if i.date == yesterday or i.date == yesterday2 %}
+                <hr><h4 align="center">yesterday</h4>
+            {% endif %}
+            {% if i.date != yesterday and i.date != yesterday2%}
+            <hr><h4 align="center">{{ i.date }}</h4>
+            {% endif %}
+        {% endif %}
+            {% if i.sender == sender_key %}
+            <div id="chat" align="right">
+                <span class="prof">
+                
+            </span>
+                <p class="text">{{ i.text }}</p>
+                <span class="h">{{ i.time }}</span>
+            </div>
+            <br>
+            {% endif %}
+            {% if i.sender != sender_key %}
+            <div id="chat2">
+                <span class="prof">
+    
+            </span>
+                <p class="text">{{ i.text }}</p>
+                <span class="h">{{ i.time }}</span>
+            </div>
+            <br>
+            {% endif %}
+        
+    {% endfor %}
+{% if today_line == True %}
+<hr><h4 align="center">today</h4>
+{% endif %}
+    {% for i in today %}
+        {% if i.sender == sender_key %}
+        <div id="chat" align="right">
+            <span class="prof">
+            
+        </span>
+            <p class="text">{{ i.text }}</p>
+            <span class="h">{{ i.time }}</span>
+        </div>
+        <br>
+        {% endif %}
+        {% if i.sender != sender_key %}
+        <div id="chat2">
+            <span class="prof">
+
+        </span>
+            <p class="text">{{ i.text }}</p>
+            <span class="h">{{ i.time }}</span>
+        </div>
+        <br>
+        {% endif %}
+    {% endfor %}
+<br><br><br>
+</body>
+</html>
