@@ -9,7 +9,28 @@ recognition in the search
 - *stars* are used to gain abilities like :
     - number of groups that can be made
     - join ligh-level groups
-- 
+- you can join your group with ypur favorite subject
 
 > ## why is its **name** chaye?
 **chaye** made from two word, chat and eye (cha+ye)
+
+> ## who are we?
+|fronend         |backend          |
+|----------------|-----------------|
+|Dorjiam         |Yasin Davody     |
+|Amir Rostaee    |Amirali Gahanbazy|
+|Matin Karimzadeh|                 |
+
+> Yasin
+
+lorem
+> Dorjiam
+
+lorem
+>Amir
+
+lorem
+>AmirAli
+
+lorem
+>Matin
