@@ -1,2 +1,3 @@
 env/
 *.pyc
+apps/backend/chatroom_app/chatroom_app/__pycache__/
