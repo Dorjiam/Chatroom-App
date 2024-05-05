@@ -15,11 +15,11 @@ recognition in the search
 **chaye** made from two word, chat and eye (cha+ye)
 
 > ## who are we?
-|fronend         |backend          |
+|frontend         |backend          |
 |----------------|-----------------|
 |Dorjiam         |Yasin Davody     |
 |Amir Rostaee    |Amirali Gahanbazy|
-|Matin Karimzadeh|                 |
+|Matin Karimzadeh|Sam Rahimy       |
 
 > Yasin
 
@@ -34,3 +34,8 @@ lorem
 
 lorem
 >Matin
+
+lorem
+>Sam
+
+lorem
