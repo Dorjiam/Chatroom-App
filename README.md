@@ -19,7 +19,7 @@ recognition in the search
 |----------------|-----------------|
 |Dorjiam         |Yasin Davody     |
 |Amir Rostaee    |Amirali Gahanbazy|
-|Matin Karimzadeh|Sam Rahimy       |
+|Matin Karimzadeh|                 |
 
 > Yasin
 
@@ -34,8 +34,5 @@ lorem
 
 lorem
 >Matin
-
-lorem
->Sam
 
 lorem
