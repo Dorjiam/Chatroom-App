@@ -1,3 +1,7 @@
-env/
+.v/
+.idea/
+db.sqlite3
 *.pyc
-apps/backend/chatroom_app/chatroom_app/__pycache__/
+__pycache__/
+migrations/
+setting.py
