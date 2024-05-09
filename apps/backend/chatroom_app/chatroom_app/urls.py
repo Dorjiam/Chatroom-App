@@ -6,5 +6,5 @@ from Admin.urls import urlpatterns as admin_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include(main_urls)),
-    path("Admin/", include(admin_urls))
+    path("us/", include(admin_urls))
 ]

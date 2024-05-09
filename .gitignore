@@ -2,6 +2,7 @@
 .idea/
 db.sqlite3
 *.pyc
-__pycache__/
+_init_/
+_pycache_/
 migrations/
 setting.py

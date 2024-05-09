@@ -34,5 +34,8 @@
 			src="https://kit.fontawesome.com/881b6155cd.js"
 			crossorigin="anonymous"
 		></script>
+		{% for i in users %}
+		<img src={{i.username}}>
+		{% endfor %}
 	</body>
 </html>
