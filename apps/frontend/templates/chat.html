@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        * {
+            font-family: "arial";
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
         #chat{
-            min-width: 100px;
+            min-width: 200px;
             max-width: 300px;
             background: #DCE8FF;
             border-radius: 10px 10px 10px 0px;
             padding: 16px;
+            margin-right: auto;
+            margin-left: 30px;
         }
         .text{
             {#text-align: right;#}
@@ -24,11 +36,13 @@
             width: 30px;
         }
         #chat2{
-            min-width: 100px;
+            min-width: 200px;
             max-width: 300px;
             background: #4399FF;
             border-radius: 10px 10px 0px 10px;
             padding: 16px;
+            margin-left: auto;
+            margin-right: 30px;
         }
         .text{
             {#text-align: right;#}
@@ -42,6 +56,19 @@
             border-radius: 50%;
             width: 30px;
         }
+        .line-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .date-line {
+            width: calc(50% - 100px);
+        }
+        .line-container h4 {
+            opacity: 1;
+            padding: 20px 40px;
+        }
     </style>
 </head>
 <body>
@@ -51,10 +78,15 @@
     {% for i in all %}
         {% if i.pk in pk_list %}
             {% if i.date == yesterday or i.date == yesterday2 %}
-                <hr><h4 align="center">yesterday</h4>
+            <div class="line-container">
+                <hr class="date-line">
+                <div class="date-text-cont"><h4 align="center">yesterday</h4></div>
+                <hr class="date-line">
+            </div>
             {% endif %}
             {% if i.date != yesterday and i.date != yesterday2%}
-            <hr><h4 align="center">{{ i.date }}</h4>
+            <div class="line-container">
+            <hr class="date-line"><div class="date-text-cont"><h4 align="center">{{ i.date }}</h4></div><hr class="date-line"></div>
             {% endif %}
         {% endif %}
             {% if i.sender == sender_key %}
@@ -80,7 +112,9 @@
         
     {% endfor %}
 {% if today_line == True %}
-<hr><h4 align="center">today</h4>
+<div class="line-container">
+<hr class="date-line"><div class="date-text-cont"><h4 align="center">today</h4></div><hr class="date-line">
+</div>
 {% endif %}
     {% for i in today %}
         {% if i.sender == sender_key %}
