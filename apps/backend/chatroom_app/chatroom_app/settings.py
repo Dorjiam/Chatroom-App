@@ -27,9 +27,9 @@ BACKEND = BASE_DIR.parent
 SECRET_KEY = 'django-insecure-g3^%m3yhi52qs_evxdmm7whvc&pmi%5az0run6p-1mo*mkng1i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'User.apps.UserConfig',
+    'Message.apps.MessageConfig',
+    'Admin.apps.AdminConfig'
 ]
 
 MIDDLEWARE = [
