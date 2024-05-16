@@ -6,11 +6,6 @@
 	color: white;
 }
 
-::selection {
-	background-color: greenyellow;
-	color: #fff;
-}
-
 html {
 	scroll-behavior: smooth;
 }
