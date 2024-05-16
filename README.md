@@ -2,7 +2,7 @@
 
 > ## What's **Chaye** ?
 >
-> Chaye is a **chat-app** for _shareing information_ and _chatting with others_. You can _make a group about something you like_ and _everyone can join and talk about that subject_. click [**here**]() to watch the **Demo**
+Chaye is a **chat-app** for _shareing information_ and _chatting with others_. You can _make a group about something you like_ and _everyone can join and talk about that subject_. click [**here**]() to watch the **Demo**
 
 > ## What can **Chaye** do?
 
@@ -13,4 +13,4 @@
 
 > ## Why is it **named** Chaye?
 >
-> **Chaye** is composed from two words, chat and eye (cha+ye)
+**Chaye** is composed from two words, chat and eye (cha+ye)
