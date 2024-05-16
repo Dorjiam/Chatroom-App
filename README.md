@@ -9,7 +9,7 @@ Chaye is a **chat-app** for _shareing information_ and _chatting with others_. Y
 - make a group about your favorite subject
 - _likes_ can help you and your group to be
   recognized in the search
-- _stars_ can be used to gain ranks like
+- _stars_ can be used to gain ranks
 
 > ## Why is it **named** Chaye?
 >
